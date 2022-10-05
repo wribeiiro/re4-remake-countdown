@@ -39,6 +39,7 @@ html {
     align-items: center;
     display: flex;
     flex-direction: column;
+    text-shadow: 2px 2px 0px #000000;
 }
 
 .show-counter .countdown > p {
@@ -52,7 +53,7 @@ html {
 }
 
 @media only screen and (max-width: 500px) {
-    .show-counter .countdown>span {
+    .show-counter .countdown > span {
         font-size: 1rem;
         line-height: 1rem;
     }

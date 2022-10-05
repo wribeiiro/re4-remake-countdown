@@ -1,11 +1,19 @@
 import "./style.css";
-import DisplayTimer from "../DisplayTimer";
 import useCountDown from "../../Hooks/useCountdown";
 
 const GameWasReleased = () => {
     return (
         <div className="expired-notice">
             <span>Boooooooom!!!</span>
+        </div>
+    );
+};
+
+const DisplayTimer = ({ value, type }) => {
+    return (
+        <div className="countdown">
+            <p>{value}</p>
+            <span>{type}</span>
         </div>
     );
 };
